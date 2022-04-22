@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-typealias Push = (AnyView, Any?) -> ()
-struct PushKey: EnvironmentKey {
+public typealias Push = (AnyView, Any?) -> ()
+public struct PushKey: EnvironmentKey {
     
-    static let defaultValue: Push = { _, _ in }
+    public static let defaultValue: Push = { _, _ in }
     
 }
 
